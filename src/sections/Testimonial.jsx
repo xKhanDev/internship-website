@@ -3,10 +3,10 @@ import { FaStar } from "react-icons/fa";
 
 const Testimonial = () => {
   return (
-    <section className="bg-gray-900 py-16">
+    <section className="bg-gray-900 py-16 px-2">
       <div className="container mx-auto">
         <h2 className="text-4xl font-bold text-center mb-8">
-          What Our Interns Say
+          What Our <span className="text-blue-500">Interns</span> Say
         </h2>
         <div className="flex flex-col md:flex-row gap-8">
           <div className="bg-gray-600 p-6 rounded-lg shadow-lg">
@@ -38,6 +38,21 @@ const Testimonial = () => {
               <FaStar className="text-yellow-500 mr-1" />
               <FaStar className="text-yellow-500 mr-1" />
               <FaStar className="text-yellow-500 mr-1" />- Umer Khan, Backend
+              Developer
+            </p>
+          </div>
+          <div className="bg-gray-600 p-6 rounded-lg shadow-lg">
+            <p className="mb-4">
+              "Internship Pakistan provided me with a platform to learn and
+              grow. The internship opportunities were diverse and challenging
+              but i never give up."
+            </p>
+            <p className="text-gray-300 flex items-center">
+              <FaStar className="text-yellow-500 mr-1" />
+              <FaStar className="text-yellow-500 mr-1" />
+              <FaStar className="text-yellow-500 mr-1" />
+              <FaStar className="text-yellow-500 mr-1" />
+              <FaStar className="text-yellow-500 mr-1" />- Ali Raza, Full Stack
               Developer
             </p>
           </div>

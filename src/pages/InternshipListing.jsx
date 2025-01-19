@@ -125,9 +125,9 @@ const InternshipListing = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center gap-8 bg-white h-screen">
+    <div className="flex flex-col justify-center items-center gap-8 p-4 bg-gray-100">
       <h1 className="text-3xl font-bold text-blue-500">Internship Listings</h1>
-      <form className="bg-gray-600 p-4 rounded-xl flex items-center gap-4">
+      <form className="bg-gray-600 p-4 rounded-l flex flex-wrap items-center gap-4">
         <label className="flex items-center gap-2">
           Search:
           <input
@@ -201,7 +201,7 @@ const InternshipListing = () => {
         {filteredInternships.map((internship) => (
           <div
             key={internship.id}
-            className="rounded-lg shadow p-4 bg-blue-500 text-black flex flex-col"
+            className="w-full rounded-lg shadow p-4 bg-blue-500 text-black flex flex-col lg:w-[30%]"
           >
             <h2>{internship.title}</h2>
             <p>Location: {internship.location}</p>
@@ -214,7 +214,7 @@ const InternshipListing = () => {
           internships.map((internship) => (
             <div
               key={internship.id}
-              className="rounded-lg shadow p-4 bg-blue-500 text-black flex flex-col"
+              className="w-full rounded-lg shadow p-4 bg-blue-500 text-black flex flex-col lg:w-[30%]"
             >
               <h2>{internship.title}</h2>
               <p>Location: {internship.location}</p>
